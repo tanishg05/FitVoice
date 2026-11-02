@@ -107,3 +107,4 @@ class RecoveryIntelligenceAgent(BaseAgent):
             "total_logs": len(logs),
             "trace_event": trace_event,
         }
+

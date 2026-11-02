@@ -84,3 +84,4 @@ def run_pipeline(
         state["final_response"] = f"An unexpected error occurred during investigation: {str(exc)}"
         state["errors"] = [str(exc)]
         return state
+

@@ -95,3 +95,4 @@ def test_execution_trace_attributes(temp_db):
         assert "result_summary" in evt
         assert "duration_ms" in evt
         assert evt["duration_ms"] >= 0.0
+

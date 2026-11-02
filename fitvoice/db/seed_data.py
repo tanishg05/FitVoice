@@ -140,3 +140,4 @@ def seed_benchmark_data(db_path: str = None) -> None:
 if __name__ == "__main__":
     seed_benchmark_data()
     print("Benchmark data seeded successfully.")
+

@@ -252,3 +252,4 @@ FitVoice is designed as an athletic performance intelligence system:
 2. **Subjective vs Objective**: Self-reported sleep duration does not evaluate sleep architecture (REM/Slow Wave sleep).
 3. **Correlation vs Causation**: Associations observed between training performance and recovery are presented transparently without unsupported causal claims.
 4. **Professional Referral**: When persistent pain, extreme soreness, or chronic exhaustion is logged, FitVoice advises consultation with qualified sports medicine professionals.
+

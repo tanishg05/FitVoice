@@ -147,3 +147,4 @@ class FitnessDataScientistAgent(BaseAgent):
             "total_records_analyzed": len(sets),
             "trace_event": trace_event,
         }
+

@@ -8,10 +8,11 @@ from fitvoice.clients.sarvam import SarvamClient, SarvamAPIError
 
 def test_demo_mode_client():
     client = SarvamClient(api_key="mock_key")
-    res = client.speech_to_text(language_code="en-IN")
-    assert "transcript" in res
-    assert res["is_live_inference"] is False
-    assert "demo" in res["model"]
+    with patch("fitvoice.config.settings.demo_mode", True):
+        res = client.speech_to_text(language_code="en-IN")
+        assert "transcript" in res
+        assert res["is_live_inference"] is False
+        assert "demo" in res["model"]
 
 
 def test_bounded_retries_on_transient_failure():

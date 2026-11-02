@@ -22,3 +22,4 @@ class AgentExecutionEvent(BaseModel):
         default_factory=lambda: datetime.now(timezone.utc).isoformat(),
         description="ISO 8601 timestamp"
     )
+

@@ -58,3 +58,4 @@ class MeasurementRecord(BaseModel):
     unit: str
     status: Literal["CANDIDATE", "CONFIRMED"] = "CANDIDATE"
     created_at: str = Field(default_factory=lambda: datetime.now(timezone.utc).isoformat())
+

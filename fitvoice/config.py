@@ -17,7 +17,7 @@ class Settings(BaseModel):
     sarvam_base_url: str = os.getenv("SARVAM_BASE_URL", "https://api.sarvam.ai")
     sarvam_llm_model: str = os.getenv("SARVAM_LLM_MODEL", "sarvam-105b")
     sarvam_stt_model: str = os.getenv("SARVAM_STT_MODEL", "saaras:v4")
-    sarvam_tts_model: str = os.getenv("SARVAM_TTS_MODEL", "bulbul:v2")
+    sarvam_tts_model: str = os.getenv("SARVAM_TTS_MODEL", "bulbul:v3")
 
     # System Configuration
     demo_mode: bool = os.getenv("FITVOICE_DEMO_MODE", "true").lower() in ("true", "1", "yes")
@@ -32,3 +32,4 @@ class Settings(BaseModel):
 
 
 settings = Settings()
+

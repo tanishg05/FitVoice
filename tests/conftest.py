@@ -30,3 +30,4 @@ def repository(temp_db):
 def mock_sarvam_client():
     """Client configured in demo mode with predictable deterministic mock responses."""
     return SarvamClient(api_key="mock_demo_key", base_url="https://api.sarvam.ai")
+

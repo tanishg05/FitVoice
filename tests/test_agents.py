@@ -102,3 +102,4 @@ def test_adaptive_coach_agent():
     # Check evidence grounding
     assert all(s["grounded_in_record"] for s in steps)
     assert "medical_disclaimer" in res["coach_output"]
+

@@ -45,3 +45,4 @@ def classify_request(state: Dict[str, Any]) -> str:
 
     # Default fallback
     return "progress_investigation" if len(user_query) > 30 else "simple_question"
+

@@ -189,3 +189,4 @@ class EvidenceSafetyCriticAgent(BaseAgent):
             "safety_issues": safety_issues,
             "trace_event": trace_event,
         }
+

@@ -130,3 +130,4 @@ def compare_recovery_periods(
         "observed_associations": associations,
         "guardrail_notice": "Observed associations indicate temporal co-occurrence, not clinical causality.",
     }
+

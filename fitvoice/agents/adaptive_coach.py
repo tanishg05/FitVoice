@@ -132,3 +132,4 @@ class AdaptiveCoachAgent(BaseAgent):
             "actionable_steps": [s.model_dump() for s in steps],
             "trace_event": trace_event,
         }
+

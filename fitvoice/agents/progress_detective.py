@@ -182,3 +182,4 @@ class ProgressDetectiveAgent(BaseAgent):
             "data_sufficiency": data_sufficiency,
             "trace_event": trace_event,
         }
+

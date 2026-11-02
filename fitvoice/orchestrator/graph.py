@@ -476,3 +476,4 @@ class FitVoiceOrchestrator:
         """Execute the LangGraph orchestrator with execution trace logging."""
         result = self.graph.invoke(initial_state)
         return result
+

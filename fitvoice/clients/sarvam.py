@@ -31,7 +31,7 @@ class SarvamClient:
         self,
         api_key: Optional[str] = None,
         base_url: Optional[str] = None,
-        timeout: float = 20.0,
+        timeout: float = 35.0,
         max_retries: int = 3,
     ):
         self.api_key = api_key if api_key is not None else settings.sarvam_api_key
@@ -184,7 +184,7 @@ class SarvamClient:
         self,
         text: str,
         target_language_code: str = "en-IN",
-        speaker: str = "meera",
+        speaker: str = "priya",
         model: Optional[str] = None,
     ) -> Dict[str, Any]:
         """Synthesize spoken response using Sarvam Bulbul."""

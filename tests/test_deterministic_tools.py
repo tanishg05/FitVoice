@@ -102,3 +102,4 @@ def test_recovery_aggregates_and_limitations():
     assert len(res["limitations"]) >= 2
     # Ensure guardrail against sleep architecture claim
     assert any("sleep architecture" in lim.lower() for lim in res["limitations"])
+

@@ -258,3 +258,4 @@ class FitnessRepository:
         conn.commit()
         conn.close()
         return affected > 0
+

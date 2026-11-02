@@ -76,3 +76,4 @@ def test_critic_enforces_bounded_revisions():
     audit = critic.audit_report(report, analytical, recovery, revision_count=2)
     assert audit["verdict"] == "APPROVED_WITH_CAVEATS"
     assert any("Max revisions (2) reached" in c for c in audit["critic_output"]["feedback_notes"])
+

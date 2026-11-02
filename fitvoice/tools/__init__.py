@@ -23,3 +23,4 @@ __all__ = [
     "compute_recovery_aggregates",
     "compare_recovery_periods",
 ]
+

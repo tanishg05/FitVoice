@@ -86,3 +86,4 @@ def init_db(db_path: str = None) -> None:
 
     conn.commit()
     conn.close()
+

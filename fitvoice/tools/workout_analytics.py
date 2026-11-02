@@ -181,3 +181,4 @@ def compute_personal_records(sets: List[Dict[str, Any]]) -> List[Dict[str, Any]]
         })
 
     return prs
+

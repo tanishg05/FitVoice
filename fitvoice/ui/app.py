@@ -139,6 +139,17 @@ if res:
     # TAB 1: Response & Confirmation
     # -------------------------------------------------------------
     with tab_response:
+        # Audio playback if synthesized Bulbul speech is available
+        audio_ref = res.get("response_audio_reference")
+        if audio_ref:
+            import base64
+            try:
+                audio_bytes = base64.b64decode(audio_ref)
+                st.audio(audio_bytes, format="audio/wav")
+                st.caption("🔊 Spoken Voice Response generated via Sarvam Bulbul v3")
+            except Exception as e:
+                pass
+
         st.markdown(res.get("final_response", ""))
 
         # Review & Confirm workflow if candidate records pending
@@ -239,3 +250,4 @@ if res:
             st.divider()
             st.markdown("#### 🔢 Fitness Data Scientist Tool Metrics")
             st.json(res["analytical_results"].get("progression", {}))
+

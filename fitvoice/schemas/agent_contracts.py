@@ -203,3 +203,4 @@ class AdaptiveCoachOutput(BaseModel):
         "for qualified sports medicine or clinical consultation."
     )
     suggest_professional_help: bool = False
+
